@@ -63,7 +63,7 @@
     - [L-1:📑file]LICENSE
     - [L-1:📑file]Makefile
     - [L-1:📑file]Makefile_windows
-    - [L-1:📑file]README.md
+    - [L-1:📑file]README.md ✅📆Feb_07_2024
     - [L-1:📑file]app.py
     - [L-1:📑file]cdk.context.json
     - [L-1:📑file]cdk.json
@@ -149,8 +149,8 @@
     - [L-1:📑file]mypy.ini
     - [L-1:📑file]package-lock.json
     - [L-1:📑file]package.json
-    - [L-1:📑file]poetry.lock
-    - [L-1:📑file]poetry.toml
+    - [L-1:📑file]poetry.lock ✅📆Feb_07_2024
+    - [L-1:📑file]poetry.toml ✅📆Feb_07_2024
     - [L-1:📂FOLDER]product/
         - [L-2:📑file]__init__.py
         - [L-2:📑file]constants.py

@@ -1,18 +1,38 @@
 # 📑 STAGE-1: SETUP
 
 ## 1.1 Documentation
-[README.md] 🔖 Stage-1: SETUP (Documentation) 🧑‍💻️ Familiarize with the overview of the project, setup instructions, explain essential information of the project ✅
-📂FOLDER[docs]: Check the docs folder for additional documentation
+- [README.md] 🔖 Stage-1: SETUP (Documentation) 🧑‍💻️ Familiarize with the overview of the project, setup instructions, explain essential information of the project ✅
+- 📂FOLDER[docs]: Check the docs folder for additional documentation ⏭️
 
 ## 1.2a Environment Setup: Python Dependencies Installation - Preferred
-[poetry.toml] 🔖 Stage-1: SETUP (dependencies) 🧑‍💻️ Use 'poetry' to install Python dependencies
+- 🧑‍💻️Joseph: [poetry 1.7.1](https://pypi.org/project/poetry/) ✅
+    ```bash
+    💲pip install poetry ✅
+    ```
+- 🧑‍💻️Joseph: Execute the following command to install the dependencies specified in poetry.toml and poetry.lock: ✅
+    - ❓ [poetry.lock] is supposed to be an auto-generated file, but how can we 'trigger' this automation process? BTW, it seems to be a MUCH better alternative compared to the conventional 'requirements.txt', how do you rate it? 
+    ```bash
+    # Pre-requisite: $ python --version -> Python 3.12.2 ✅
+
+    💲poetry install --no-root ✅
+
+    💲poetry show --only main ✅
+    ```
+- [poetry.toml] 🔖 Stage-1: SETUP (dependencies) 🧑‍💻️ Use 'poetry' to install Python dependencies
     - the configuration file where you define your dependencies and project metadata.
-[poetry.lock] 🔖 Stage-1: SETUP (dependencies) 🧑‍💻️ Use 'poetry' to install Python dependencies
+        - NOTE: 👍 we do NOT need to manually create a virtual environment before running poetry install. This configuration setting instructs Poetry to automatically create the virtual environment inside the project directory.
+            ```toml
+            [virtualenvs]
+            in-project = true
+            ```
+- [poetry.lock] 🔖 Stage-1: SETUP (dependencies) 🧑‍💻️ Use 'poetry' to install Python dependencies
     - an auto-generated file that locks dependencies to specific versions, ensuring consistency across environments.
+
 
 (🧠 lock -> aut-generated)
 
 ## 1.2b Environment Setup: Node.js Dependencies Installation
+- ❓ Given the fact we've already successfully run 'poetry install --no-root', is it mandatroy to also run the following two files if we ONLY need to run the application with Python?
 [package.json] 🔖 Stage-1: SETUP (dependencies) 🅱️ 🧑‍💻️ Run 'npm install' to install Node.js dependencies
     - defines the Node.js project’s dependencies, scripts, and other configurations.
 [package-lock.json] 🔖 Stage-1: SETUP (dependencies) 🅱️ 🧑‍💻️ Run 'npm install' to install Node.js dependencies
