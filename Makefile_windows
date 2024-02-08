@@ -1,10 +1,19 @@
 .PHONY: dev lint complex coverage pre-commit sort deploy destroy deps unit infra-tests integration e2e coverage-tests docs lint-docs build format
 
 dev:
+	# Upgrade pip and install pre-commit and poetry for code quality and dependency management
 	pip install --upgrade pip pre-commit poetry
+
+	# Install pre-commit hooks to automate code quality checks before each commit
 	pre-commit install
+
+	# Configure Poetry to create a local virtual environment within the project directory
 	poetry config --local virtualenvs.in-project true
+
+	# Install project dependencies defined in poetry.lock without installing the project package itself
 	poetry install --no-root
+
+	# Install Node.js dependencies as specified in package-lock.json for consistent setup
 	npm ci
 
 format:

@@ -29,7 +29,7 @@
 
         💲poetry install --no-root ✅
 
-        💲poetry show --only main ✅
+        💲poetry show --only main 🔬✅
         ```
 - [poetry.toml] ✅ 🔖 Stage-1: SETUP (dependencies) 🧑‍💻️ Use 'poetry' to install Python dependencies
     - the configuration file where you define your dependencies and project metadata.
@@ -45,6 +45,16 @@
 
 ## 1.2b Environment Setup: Node.js Dependencies Installation
 - 🧑‍💻️ NOTE: if the Python application runs without issues after using 'poetry install --no-root', you're set for the Python part. The Node.js dependencies are specifically for AWS CDK operations.
+    ```bash
+    💲 npm install ✅
+    💲 npm list 🔬✅
+    ```
+    ```bash
+    Admin@JosephYu-X:/c/JosephYu/serverless-python-demo$ npm list
+    serverless-python-demo@ C:\JosephYu\serverless-python-demo
+    └── aws-cdk@2.115.0
+    ```
+    - 🧑‍💻️ MEMO: the output of npm list indicates that aws-cdk version 2.115.0 is installed in your project, which aligns with the specifications in both package.json and package-lock.json. This confirms that your Node.js dependencies are correctly installed and managed.
     - [package.json] 🔖 Stage-1: SETUP (dependencies) 🅱️ 🧑‍💻️ Run 'npm install' to install Node.js dependencies
         - defines the Node.js project’s dependencies, scripts, and other configurations.
     - [package-lock.json] 🔖 Stage-1: SETUP (dependencies) 🅱️ 🧑‍💻️ Run 'npm install' to install Node.js dependencies
@@ -52,6 +62,14 @@
 
 
 ## 1.3 Local Running: understand how to set up and manage the project, even if you're not planning to contribute back
+- [Install Chocolatey](https://chocolatey.org/install)
+    - 🧑‍💻️ NOTE: It's recommended to run the Chocolatey installation (and most Chocolatey package installations) from an elevated command shell, which means running it with administrative privileges.
+        ```PowerShell
+        💲choco install make ✅
+        ```
+    - 🧑‍💻️ MEMO: the [Makefile_windows] serves as a powerful tool to streamline and automate a series of complex commands into simple, easy-to-execute tasks. By running 'make -f Makefile_windows dev', you trigger a sequence of predefined commands. It "encapsulates" and automates the setup process, ensuring consistency and reducing manual errors, making it a convenient tool for developers.
+    - 🧑‍💻️ MEMO: Using the Makefile provided by a senior developer or a reliable source is generally a best practice, especially in a production-grade project. It not only ensures consistency across different setups but also leverages the expertise of experienced developers. Running 'make -f Makefile_windows dev' streamlines the setup process and reduces the likelihood of manual errors, making it a time-efficient and reliable approach for initializing project environments.
+
 [Makefile] 🔖 Stage-1: DEPLOY 🧑‍💻️ Collection of predefined commands for building or local testing
 [Makefile_windows] 🔖 Stage-1: DEPLOY 🧑‍💻️ Collection of predefined commands for building or local testing
 
