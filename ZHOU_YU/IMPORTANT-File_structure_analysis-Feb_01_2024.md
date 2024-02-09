@@ -69,11 +69,14 @@
         ```
     - 🧑‍💻️ MEMO: the [Makefile_windows] serves as a powerful tool to streamline and automate a series of complex commands into simple, easy-to-execute tasks. By running 'make -f Makefile_windows dev', you trigger a sequence of predefined commands. It "encapsulates" and automates the setup process, ensuring consistency and reducing manual errors, making it a convenient tool for developers.
     - 🧑‍💻️ MEMO: Using the Makefile provided by a senior developer or a reliable source is generally a best practice, especially in a production-grade project. It not only ensures consistency across different setups but also leverages the expertise of experienced developers. Running 'make -f Makefile_windows dev' streamlines the setup process and reduces the likelihood of manual errors, making it a time-efficient and reliable approach for initializing project environments.
+        ```Bash
+        💲make -f Makefile_windows dev ✅👈
+        ```
+        - 👀 'We noticed a new environment has been created. Do you want to select it for the workspace folder?' -> YES
+        - [Makefile] 🔖 Stage-1: DEPLOY 🧑‍💻️ Collection of predefined commands for building or local testing
+        - [Makefile_windows] 🔖 Stage-1: DEPLOY 🧑‍💻️ Collection of predefined commands for building or local testing
+        - [app.py] 🔖 Stage-1: DEPLOY (Local-Running) 🧑‍💻️ The main entry point of the application to run locally, provide a high-level orchestration overview
 
-[Makefile] 🔖 Stage-1: DEPLOY 🧑‍💻️ Collection of predefined commands for building or local testing
-[Makefile_windows] 🔖 Stage-1: DEPLOY 🧑‍💻️ Collection of predefined commands for building or local testing
-
-[app.py] 🔖 Stage-1: DEPLOY (Local-Running) 🧑‍💻️ The main entry point of the application to run locally, provide a high-level orchestration overview
 
 ## 1.4 Codebase: CDK for infrastructure as code
 📂FOLDER[product]: Explore the product folder to understand the application logic
@@ -108,10 +111,10 @@ Deploy the application:
 
 # 📑 STAGE-3: Use/Modify
 
-## 3.1 Exploring and Modifying Code: 
+## 3.1 Exploring and Modifying Code:
 📂FOLDER[product]
 
-## 3.2 Version Control: 
+## 3.2 Version Control:
 [.gitignore] 🔖 Stage-3: Use/Modify (Version Control) 🅱️ 🧑‍💻️ indication for Git to ignore certain file extensions
 
 
