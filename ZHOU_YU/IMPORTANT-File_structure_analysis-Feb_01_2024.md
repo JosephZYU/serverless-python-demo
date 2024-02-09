@@ -13,7 +13,7 @@
 ## 1.2a Environment Setup: Python Dependencies Installation - Preferred
 - 🧑‍💻️Joseph: [poetry 1.7.1](https://pypi.org/project/poetry/) ✅
     ```bash
-    💲pip install poetry ✅
+    💲pip install poetry ✅OPTIONAL
     ```
 - 🧑‍💻️Joseph: Execute the following command to install the dependencies specified in poetry.toml and poetry.lock: ✅
     - To open the Python installation directory, in the address bar at the top, type and press Enter:
@@ -27,9 +27,9 @@
         ```bash
         # Pre-requisite: $ python --version -> Python 3.12.2 ✅
 
-        💲poetry install --no-root ✅
+        💲poetry install --no-root ✅OPTIONAL
 
-        💲poetry show --only main 🔬✅
+        💲poetry show --only main ✅🔬
         ```
 - [poetry.toml] ✅ 🔖 Stage-1: SETUP (dependencies) 🧑‍💻️ Use 'poetry' to install Python dependencies
     - the configuration file where you define your dependencies and project metadata.
@@ -46,8 +46,8 @@
 ## 1.2b Environment Setup: Node.js Dependencies Installation
 - 🧑‍💻️ NOTE: if the Python application runs without issues after using 'poetry install --no-root', you're set for the Python part. The Node.js dependencies are specifically for AWS CDK operations.
     ```bash
-    💲 npm install ✅
-    💲 npm list 🔬✅
+    💲 npm install ✅OPTIONAL - SAME as 'npm ci'
+    💲 npm list ✅🔬
     ```
     ```bash
     Admin@JosephYu-X:/c/JosephYu/serverless-python-demo$ npm list
@@ -65,7 +65,7 @@
 - [Install Chocolatey](https://chocolatey.org/install)
     - 🧑‍💻️ NOTE: It's recommended to run the Chocolatey installation (and most Chocolatey package installations) from an elevated command shell, which means running it with administrative privileges.
         ```PowerShell
-        💲choco install make ✅
+        💲choco install make ✅one-time setup
         ```
     - 🧑‍💻️ MEMO: the [Makefile_windows] serves as a powerful tool to streamline and automate a series of complex commands into simple, easy-to-execute tasks. By running 'make -f Makefile_windows dev', you trigger a sequence of predefined commands. It "encapsulates" and automates the setup process, ensuring consistency and reducing manual errors, making it a convenient tool for developers.
     - 🧑‍💻️ MEMO: Using the Makefile provided by a senior developer or a reliable source is generally a best practice, especially in a production-grade project. It not only ensures consistency across different setups but also leverages the expertise of experienced developers. Running 'make -f Makefile_windows dev' streamlines the setup process and reduces the likelihood of manual errors, making it a time-efficient and reliable approach for initializing project environments.
