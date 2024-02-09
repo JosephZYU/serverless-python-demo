@@ -1,18 +1,19 @@
-1. Great! Just out of curiosity, if were to create and assign those labels, how would you design those tags, Are there any additional categories that I missed out on?
-
-2. Given the above "1622" edition, can I skip those tagged with 'non-essential' and go straight onto the step such as "4. Testing"? Are there any negative impacts of not performing format and lining?
-
-
 NOTE: Always ensure you understand what each target does before executing it, especially in a production environment. This sequence is a general guideline and should be adapted to fit your project's specific workflow and requirements.
 
+
 1. Initial Setup:
-    - 🔖 Target 'dev': tag_1-local
+    - Target 'dev': tag_1-local
+        - 💲make -f Makefile_windows dev ✅Feb_08_2024
 
 2. Format and Linting:
-    - 🔖 Target 'format': tag_0-non_essential
-    - 🔖 Target 'format-fix': tag_0-non_essential
-    - 🔖 Target 'lint': tag_0-non_essential
-    - 🔖 Target 'mypy-lint': tag_0-non_essential
+    - Target 'format': tag_0-non_essential
+        - 💲make -f Makefile_windows format ✅Feb_09_2024
+    - Target 'format-fix': tag_0-non_essential
+        - 💲make -f Makefile_windows format-fix ✅Feb_09_2024
+    - Target 'lint': tag_0-non_essential
+        - 💲make -f Makefile_windows lint ✅Feb_09_2024
+    - Target 'mypy-lint': tag_0-non_essential
+        - 💲make -f Makefile_windows mypy-lint ✅Feb_09_2024
 
 3. Complexity Analysis:
     - 🔖 Target 'complex': tag_0-non_essential
